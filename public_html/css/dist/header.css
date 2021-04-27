@@ -1,0 +1,54 @@
+.header {
+  display: grid;
+  overflow: auto;
+  background-color: #fff;
+  height: 100px;
+}
+.header .container .header-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr 3fr;
+  max-height: 10vh;
+}
+.header .container .header-content .nav-group {
+  display: flex;
+  align-items: center;
+}
+.header .container .header-content .nav-group ul {
+  padding: auto;
+  background-color: none;
+}
+.header .container .header-content .nav-group ul li {
+  display: inline;
+  background-color: none;
+  font-size: 1.2em;
+  color: black;
+  font-weight: bold;
+  padding: 1em 0;
+}
+.header .container .header-content .nav-group ul li a {
+  text-transform: uppercase;
+}
+.header .container .header-content .nav-group ul li a:hover {
+  border-bottom: 5px solid lightgreen;
+}
+.header .container .header-content .one {
+  justify-content: flex-start;
+}
+.header .container .header-content .one ul li {
+  padding-right: 1.5em;
+}
+.header .container .header-content .logo {
+  display: flex;
+  justify-content: center;
+}
+.header .container .header-content .logo a img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.header .container .header-content .two {
+  justify-content: flex-end;
+}
+.header .container .header-content .two ul li {
+  padding-left: 1.5em;
+}
