@@ -13,13 +13,9 @@
 
 <body>
 
-    <!-- PRE LOADER -->
-    <?php
-        include "./html/preloader.html";
-    ?>
 
 
-    <!-- MENU -->
+    <!-- HEADER -->
 
 	
     <?php
