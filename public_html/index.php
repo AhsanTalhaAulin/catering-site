@@ -3,11 +3,13 @@
 
 <head>
 
-    <title>Catering Site</title>
+    <title>Shaan Mughal Foods Service</title>
 
     <?php
         include "./html/head-essentials.html";
     ?>
+
+    <link rel="stylesheet" href="css/dist/index.css">
 
 </head>
 
@@ -23,9 +25,9 @@
     ?>
 
 
-    <!-- HOME -->
+    <!-- BANNER -->
     <?php
-        include "./html/index_element/home.html";
+        include "./html/index_element/banner.html";
     ?>
 
 

@@ -1,8 +1,8 @@
 .header {
   display: grid;
-  overflow: auto;
+  overflow: hidden;
   background-color: #fff;
-  height: 100px;
+  height: 150px;
 }
 .header .container .header-content {
   display: grid;
@@ -27,9 +27,12 @@
 }
 .header .container .header-content .nav-group ul li a {
   text-transform: uppercase;
+  text-decoration: none;
+  color: black;
 }
 .header .container .header-content .nav-group ul li a:hover {
-  border-bottom: 5px solid lightgreen;
+  border-bottom: 5px solid #f37521;
+  border-radius: 2px;
 }
 .header .container .header-content .one {
   justify-content: flex-start;
@@ -42,8 +45,8 @@
   justify-content: center;
 }
 .header .container .header-content .logo a img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
 }
 .header .container .header-content .two {

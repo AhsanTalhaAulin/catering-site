@@ -1,9 +1,18 @@
+
+
+//variables
+@header_height : 150px;
+@logo-color: #f37521;
+
+
+
+
 .header {
 
     display: grid;
-    overflow: auto;
+    overflow: hidden;
     background-color: #fff;
-    height: 100px;
+    height: @header_height;
 
     .container {
 
@@ -34,10 +43,13 @@
                         a {
 
                             text-transform: uppercase;
+                            text-decoration: none;
+                            color: black;
                         }
 
                         a:hover {
-                            border-bottom: 5px solid lightgreen;
+                            border-bottom: 5px solid #f37521;
+                            border-radius: 2px;
                         }
                     }
 
@@ -64,8 +76,8 @@
 
 
                     img {
-                        width: 100px;
-                        height: 100px;
+                        width: @header_height;
+                        height: @header_height;
                         object-fit: contain;
                     }
 
