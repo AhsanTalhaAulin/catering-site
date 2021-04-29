@@ -124,6 +124,44 @@
   border: 1px solid black;
   padding: 1em;
 }
+.popular-menu .container {
+  background-color: aqua;
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+.popular-menu .container .head {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.popular-menu .container .head .btn {
+  border: 1px solid black;
+}
+.popular-menu .container .plans {
+  display: grid;
+}
+.popular-menu .container .plans .row {
+  display: flex;
+  justify-content: space-between;
+}
+.popular-menu .container .plans .row .col {
+  width: 33%;
+  border: 1px solid black;
+  padding: 1em;
+}
+.contact .container {
+  height: 60vh;
+}
+.contact .container .row {
+  display: grid;
+}
+.contact .container .row .form {
+  padding: 2em;
+}
+.contact .container .row .map iframe {
+  border-radius: 2px solid black;
+}
 .abc {
   height: 500px;
   width: 100%;

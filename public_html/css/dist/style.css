@@ -11,3 +11,14 @@
 body {
   background-color: beige;
 }
+.showclass {
+  display: block !important;
+}
+.hideclass {
+  display: none !important;
+}
+.btn {
+  background-color: #1e8cb9;
+  color: white;
+  font-weight: bold;
+}
