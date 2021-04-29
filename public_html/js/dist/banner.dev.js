@@ -7,8 +7,7 @@ var sliderImages = document.querySelectorAll(".slide"),
 
 function reset() {
   for (var i = 0; i < sliderImages.length; i++) {
-    var element = sliderImages[i];
-    element.style.display = "none";
+    sliderImages[i].style.display = "none";
   }
 } // Init slider
 
@@ -16,19 +15,22 @@ function reset() {
 function startSlide() {
   reset();
   sliderImages[0].style.display = "block";
+  console.log(current);
 } // Show prev
 
 
-function showPrev() {
+function slideLeft() {
   reset();
-  sliderImages[current - 1].style.display = "block";
-  current--;
+  sliderImages[current - 1].style.display = "block"; // console.log(current);
+
+  current--; // console.log(current);
 } // Show next
 
 
 function slideRight() {
   reset();
-  sliderImages[current + 1].style.display = "block";
+  sliderImages[current + 1].style.display = "block"; // console.log(current);
+
   current++;
 } // Left arrow click
 
@@ -39,6 +41,7 @@ arrowLeft.addEventListener("click", function () {
   }
 
   slideLeft();
+  console.log(current);
 }); // Right arrow click
 
 arrowRight.addEventListener("click", function () {
@@ -47,5 +50,6 @@ arrowRight.addEventListener("click", function () {
   }
 
   slideRight();
+  console.log(current);
 });
 startSlide();

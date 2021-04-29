@@ -6,33 +6,31 @@ let sliderImages = document.querySelectorAll(".slide"),
 // Clear all images
 function reset() {
     for (let i = 0; i < sliderImages.length; i++) {
-        const element = sliderImages[i];
-
-        element.style.display = "none";
-
+        sliderImages[i].style.display = "none";
     }
 }
 
-
 // Init slider
-
 function startSlide() {
     reset();
     sliderImages[0].style.display = "block";
+    console.log(current);
 }
 
-
 // Show prev
-function showPrev() {
+function slideLeft() {
     reset();
     sliderImages[current - 1].style.display = "block";
+    // console.log(current);
     current--;
+    // console.log(current);
 }
 
 // Show next
 function slideRight() {
     reset();
     sliderImages[current + 1].style.display = "block";
+    // console.log(current);
     current++;
 }
 
@@ -42,6 +40,7 @@ arrowLeft.addEventListener("click", function() {
         current = sliderImages.length;
     }
     slideLeft();
+    console.log(current);
 });
 
 // Right arrow click
@@ -50,6 +49,7 @@ arrowRight.addEventListener("click", function() {
         current = -1;
     }
     slideRight();
+    console.log(current);
 });
 
 startSlide();
