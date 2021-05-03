@@ -39,15 +39,15 @@
   flex-direction: column;
   text-align: left;
   background-color: rgba(20, 20, 20, 0.2);
-  width: 50%;
+  width: 40%;
   height: 100%;
   color: #fff;
-  cursor: e-resize;
   padding: 2em;
 }
 .banner .wrap .slide .slide-content .caption .title {
   color: black;
   font-size: 2em;
+  font-weight: bold;
   padding-bottom: 1em;
 }
 .banner .wrap .slide1 {
@@ -151,16 +151,84 @@
   padding: 1em;
 }
 .contact .container {
-  height: 60vh;
+  height: 30vh;
 }
 .contact .container .row {
-  display: grid;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 0;
 }
 .contact .container .row .form {
   padding: 2em;
+  width: 40%;
+}
+.contact .container .row .form .title h2 {
+  align-self: center;
 }
 .contact .container .row .map iframe {
   border-radius: 2px solid black;
+}
+.testimonial {
+  background-color: lightblue;
+  height: 60vh;
+}
+.testimonial h1 {
+  text-align: center;
+}
+.testimonial .slide-row {
+  display: flex;
+  width: 400vh;
+}
+.testimonial .slide-row .slide-col {
+  width: 100vh;
+  position: relative;
+}
+.testimonial .slide-row .slide-col .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonial .slide-row .slide-col .container .user-txt {
+  background: #2d3a59;
+  width: 60vh;
+  height: 30vh;
+  position: relative;
+  left: 0;
+  border-radius: 10px;
+  color: #d3d4d6;
+  box-sizing: border-box;
+}
+.testimonial .slide-row .slide-col .container .user-txt p {
+  font-size: 18px;
+  line-height: 24px;
+}
+.testimonial .slide-row .slide-col .container .user-txt h3 {
+  margin: 35px 0 5px;
+  color: #fff;
+}
+.testimonial .slide-row .slide-col .container .user-img img {
+  top: 75%;
+  margin-top: 5px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.testimonial .indicator {
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+.testimonial .indicator .slide-btn {
+  margin: 5px;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 15px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.testimonial .indicator .active {
+  width: 45px;
 }
 .abc {
   height: 500px;

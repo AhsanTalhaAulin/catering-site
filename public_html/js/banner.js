@@ -10,7 +10,7 @@ function reset() {
     }
 }
 
-// Init slider
+// Initial slider
 function startSlide() {
     reset();
     sliderImages[0].style.display = "block";

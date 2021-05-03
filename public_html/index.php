@@ -9,7 +9,7 @@
         include "./html/head-essentials.html";
     ?>
 
-    <link rel="stylesheet" href="css/dist/index.css">
+    <link rel="stylesheet" href="css/dist/home.css">
 
 </head>
 

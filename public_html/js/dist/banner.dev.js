@@ -9,7 +9,7 @@ function reset() {
   for (var i = 0; i < sliderImages.length; i++) {
     sliderImages[i].style.display = "none";
   }
-} // Init slider
+} // Initial slider
 
 
 function startSlide() {
